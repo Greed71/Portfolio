@@ -31,7 +31,7 @@
         </a>
     </div>
 	<div class="block-grad block">
-		<h1>Il mio nome è Mariano L.</h1>
+		<h1>Salve, il mio nome è Mariano L.</h1>
         <h2>Sono un laureato in Informatica, appassionato di sviluppo software e di tutto ciò che riguarda il mondo tech.</h2>
         <div class="block-links">
             <a href="https://www.linkedin.com/in/marianolongo" class="block-link" target="_blank" rel="noopener">

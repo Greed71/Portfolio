@@ -30,7 +30,7 @@
         </a>
     </div>
     <div class="block-grad block">
-        <h1>Welcome in my Portfolio!</h1>
+        <h1>Hi, my name is Mariano L.</h1>
         <h2>I am a Computer Science graduate, passionate about software development and everything tech.</h2>
         <div class="block-links">
             <a href="https://www.linkedin.com/in/marianolongo" class="block-link" rel="noopener">
