@@ -2,14 +2,39 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<script src="
+https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+"></script>
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+			#particles-js {
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    width: 100vw;
+			    height: 100vh;
+			    z-index: 0;
+			    pointer-events: none;
+			}
 		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
+		<div id="particles-js"></div>
 		<div style="display: contents">%sveltekit.body%</div>
+		<script>
+			function loadParticles() {
+				if (window.particlesJS) {
+					particlesJS.load('particles-js', '/assets/particles.json', function () {
+						console.log('callback - particles.js config loaded');
+					});
+				} else {
+					setTimeout(loadParticles, 50);
+				}
+			}
+			loadParticles();
+		</script>
 	</body>
 </html>
